@@ -1,0 +1,13 @@
+
+age_input = int(input("Enter your age:"))
+
+may_id_input = input("Do you have a valid ID? (yes/no):")
+may_id = may_id_input == "yes"
+
+if age_input >= 18 and may_id:
+    print("Eligable!")
+else:
+    print("Not Eligable")   
+    
+if age_input >= 60:
+        print("Your also qualify for a senior discount!")
