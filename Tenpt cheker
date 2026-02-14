@@ -1,0 +1,11 @@
+print(" This  is the temperature checker!")
+ 
+tempt_checker = int(input("Enter the current Temperature:"))
+if tempt_checker >30:
+    print("Ang init noh Hot kasi ako!")
+elif tempt_checker <= 30:
+         print("Ganda ng panahon Maganda ka kasi!")
+if tempt_checker < 10:
+    print("ANLAMEGGGGGGGGGPAKISSGGGGG!")
+    
+
