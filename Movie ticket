@@ -1,0 +1,47 @@
+print("=== MOVIE TICKET SYSTEM ===")
+day = input("Day(weekdays/weekend): ")
+customer = input("Customer type(regular/senior/student): ")
+time = int(input("Show time: "))
+num = int(input("Number of tickets: "))
+
+
+if time < 9 or time > 22:
+    print("Error: Invalid time")
+elif num <= 0:
+    print("Error: Invalid ticket count")
+else:
+    
+    if day == "weekend":
+        price = 300
+    else:
+        price = 200
+    
+    total = price * num
+    print("--- RECEIPT ---")
+    print("Base total:", total)
+
+  
+    if customer == "student":
+        discount1 = total * 0.20
+        total = total - discount1
+        print("Student discount (20%):", discount1)
+    elif customer == "senior":
+        discount1 = total * 0.30
+        total = total - discount1
+        print("Senior discount:", discount1)
+
+   
+    if time < 12:
+        discount2 = total * 0.10
+        total = total - discount2
+        print("Matinee discount (10%):", discount2)
+
+
+    if num >= 5:
+        discount3 = total * 0.05
+        total = total - discount3
+        print("Group discount (5%):", discount3)
+
+
+    print("TOTAL:", total)
+    print("Thank you for your purchase!")
