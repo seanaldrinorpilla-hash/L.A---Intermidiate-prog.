@@ -1,0 +1,15 @@
+sentence = input("Enter a sentence: ")
+
+print("\nUppercase:", sentence.upper())
+print("Lowercase:", sentence.lower())
+print("Title Case:", sentence.title())
+
+print("Count of 'a':", sentence.lower().count('a'))
+
+print("Without extra spaces:", sentence.strip())
+
+print("With underscores:", sentence.strip().replace(" ", "_"))
+
+print("\nWords:")
+for word in sentence.strip().split():
+    print(word)
